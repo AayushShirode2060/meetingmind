@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+
+# Uploads (keep dirs, ignore files)
+server/uploads/audio/*
+server/uploads/reports/*
+!server/uploads/audio/.gitkeep
+!server/uploads/reports/.gitkeep
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
