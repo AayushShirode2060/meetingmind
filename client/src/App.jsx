@@ -1,122 +1,77 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
+// ============================================================
+// APP.JSX — Root Application Component
+// Sets up routing, layout, and global providers
+// ============================================================
+// ROUTING MAP:
+//   /              → Landing page (Home)
+//   /upload        → Audio upload page
+//   /meeting/:id   → Meeting detail page (transcript, summary, etc.)
+//   /history       → List of all past meetings
+//   /meeting/:id/chat → AI chat with a specific meeting
+//   *              → 404 Not Found page
+// ============================================================
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+// Layout components
+import Navbar from './components/Navbar/Navbar';
+// Page components
+// Each page is lazy-loadable later for performance,
+// but for now we import them directly
+import Home from './pages/Home/Home';
+import Upload from './pages/Upload/Upload';
+import MeetingPage from './pages/Meeting/Meeting';
+import History from './pages/History/History';
+import Chat from './pages/Chat/Chat';
+import NotFound from './pages/NotFound/NotFound';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    // BrowserRouter provides the routing context to all child components
+    // It uses the browser's History API for clean URLs (no # fragments)
+    <Router>
+      {/* ---- Global Toast Notifications ---- */}
+      {/* react-hot-toast renders toast notifications here */}
+      {/* position: top-right — non-intrusive, visible */}
+      {/* Dark theme styling to match our UI */}
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: '#1a1a2e',
+            color: '#e8e8f0',
+            border: '1px solid #2a2a40',
+            borderRadius: '12px',
+            fontSize: '14px'
+          },
+          success: {
+            iconTheme: { primary: '#4ade80', secondary: '#1a1a2e' }
+          },
+          error: {
+            iconTheme: { primary: '#f87171', secondary: '#1a1a2e' }
+          }
+        }}
+      />
+      {/* ---- Navbar (appears on every page) ---- */}
+      <Navbar />
+      {/* ---- Main Content Area ---- */}
+      {/* pt-20: padding-top to offset the fixed Navbar height */}
+      <main className="min-h-screen pt-20">
+        <Routes>
+          {/* Landing page */}
+          <Route path="/" element={<Home />} />
+          {/* Upload audio file */}
+          <Route path="/upload" element={<Upload />} />
+          {/* Meeting detail — :id is a URL parameter (MongoDB ObjectId) */}
+          <Route path="/meeting/:id" element={<MeetingPage />} />
+          {/* Meeting history list */}
+          <Route path="/history" element={<History />} />
+          {/* AI chat for a specific meeting */}
+          <Route path="/meeting/:id/chat" element={<Chat />} />
+          {/* 404 catch-all — matches any unrecognized URL */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+    </Router>
+  );
 }
-
-export default App
+export default App;
