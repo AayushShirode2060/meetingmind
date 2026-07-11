@@ -23,6 +23,7 @@ import MeetingPage from './pages/Meeting/Meeting';
 import History from './pages/History/History';
 import Chat from './pages/Chat/Chat';
 import NotFound from './pages/NotFound/NotFound';
+import MeetingDetail from './pages/Meeting/MeetingDetail';
 function App() {
   return (
     // BrowserRouter provides the routing context to all child components
@@ -62,7 +63,7 @@ function App() {
           {/* Upload audio file */}
           <Route path="/upload" element={<Upload />} />
           {/* Meeting detail — :id is a URL parameter (MongoDB ObjectId) */}
-          <Route path="/meeting/:id" element={<MeetingPage />} />
+          <Route path="/meeting/:id" element={<MeetingDetail/>} />
           {/* Meeting history list */}
           <Route path="/history" element={<History />} />
           {/* AI chat for a specific meeting */}
