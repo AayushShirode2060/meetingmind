@@ -31,10 +31,18 @@ Transform meeting recordings into structured transcripts, AI-generated summaries
 # 🚀 Live Demo
 
 ### 🌐 Frontend
-https://YOUR-VERCEL-LINK.vercel.app
+https://meetingmind-mocha.vercel.app/
 
 ### ⚙ Backend API
-https://YOUR-RENDER-LINK.onrender.com
+https://meetingmind-ysbc.onrender.com/api/health
+
+### 🎥 Small Demo
+(Watch in 0.5x for understanding flow in better way)
+
+
+https://github.com/user-attachments/assets/2355f1d2-ff80-4ce7-becc-a0dcae237525
+
+
 
 ---
 
@@ -237,60 +245,33 @@ server/
 # 🏛 Architecture
 
 ```
-User
-
+      User
         │
-
         ▼
-
 React Frontend
-
         │
-
         ▼
-
-Express API
-
+  Express API
         │
-
         ▼
-
-Multer Upload
-
+  Multer Upload
         │
-
         ▼
-
-AssemblyAI
-
+    AssemblyAI
         │
-
         ▼
-
-Transcript
-
+    Transcript
         │
-
         ▼
-
-Gemini AI
-
+    Gemini AI
         │
-
         ▼
-
 Summary + Action Items
-
         │
-
         ▼
-
-MongoDB
-
+     MongoDB
         │
-
         ▼
-
 Frontend Dashboard
 ```
 
@@ -316,10 +297,13 @@ Frontend Dashboard
 
 ## 📄 Transcript,Executive Summary,Key Decisions,Action Items,Deadlines,Risk & Concerns,Follow up draft email
 
-<img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/7d9ecc1b-3ed1-4813-9499-213ed47e1c47" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/59107890-a5dd-46d8-8aa1-cb89ade19af1" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cd0e7bf-3505-4d6e-927f-755670ba354b" />
-<img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/ca365dca-b9dc-42f7-8e92-703ce1a58477" />
+
+<img width="50%" height="906" alt="image" src="https://github.com/user-attachments/assets/7d9ecc1b-3ed1-4813-9499-213ed47e1c47" />
+        
+<img width="50%" height="1080" alt="image" src="https://github.com/user-attachments/assets/59107890-a5dd-46d8-8aa1-cb89ade19af1" />
+
+<img width="50%" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cd0e7bf-3505-4d6e-927f-755670ba354b" />
+<img width="50%" height="1077" alt="image" src="https://github.com/user-attachments/assets/ca365dca-b9dc-42f7-8e92-703ce1a58477" />
 
 
 
