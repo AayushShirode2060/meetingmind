@@ -1,6 +1,9 @@
 <div align="center">
+<img width="2571" height="1376" alt="MM" src="https://github.com/user-attachments/assets/142784ba-e2bb-4818-ba3d-aef14093cd7c" />
 
-# 🧠 MeetingMind AI
+
+
+# 🤖MeetingMind AI
 
 ### AI-Powered Meeting Intelligence Platform
 
@@ -60,6 +63,27 @@ Instead of manually listening to long meeting recordings and writing notes, user
 - Saves meeting history
 - Allows users to interact with meeting content
 
+---
+# ⭐ Key Highlights
+
+  ✔ AI Speech-to-Text
+
+  ✔ Speaker Identification
+
+  ✔ AI Meeting Chat
+
+  ✔ Executive Summary
+
+  ✔ Action Items
+
+  ✔ Key Decisions
+
+  ✔ PDF Report
+
+  ✔ Cloud Deployment
+
+  ✔ Scalable Architecture
+  
 ---
 
 # ✨ Features
@@ -335,7 +359,7 @@ Frontend Dashboard
 
 
 ---
-## 🧠 AI Chat -getting important insights of meet  by asking questions to AI
+## 🧠 AI Chat-Ask natural language questions about the meeting and receive AI-generated insights.
 
 <table>
   <tr>
