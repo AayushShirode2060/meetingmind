@@ -15,7 +15,18 @@ const summarize=async(transcript)=>{
         }
       })
 
-      const result=JSON.parse(response.text);
+      let rawText = response.text || '';
+      
+      // Clean markdown formatting if present
+      let cleanText = rawText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '').trim();
+      
+      // Extract just the JSON object to ignore any trailing text
+      const jsonMatch = cleanText.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+          cleanText = jsonMatch[0];
+      }
+
+      const result = JSON.parse(cleanText);
 
       return{
         summary:result.summary ||'',
