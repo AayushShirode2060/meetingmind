@@ -288,8 +288,19 @@ Frontend Dashboard
 
 ## 📤 Upload Meeting
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5fd148fb-63c7-4508-94a5-39436fa95ead" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/977873c7-7ca6-40c4-9053-2450b54989b3" />
+<table>
+  <tr>
+    <td align="center">
+     <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5fd148fb-63c7-4508-94a5-39436fa95ead" />
+    </td>
+    <td align="center">
+     <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/977873c7-7ca6-40c4-9053-2450b54989b3" />
+    </td>
+  </tr>
+</table>
+
+
+
 
 
 
@@ -297,13 +308,27 @@ Frontend Dashboard
 
 ## 📄 Transcript,Executive Summary,Key Decisions,Action Items,Deadlines,Risk & Concerns,Follow up draft email
 
-
-<img width="50%" height="906" alt="image" src="https://github.com/user-attachments/assets/7d9ecc1b-3ed1-4813-9499-213ed47e1c47" />
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/7d9ecc1b-3ed1-4813-9499-213ed47e1c47" width="100%">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/59107890-a5dd-46d8-8aa1-cb89ade19af1" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img width="100%" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cd0e7bf-3505-4d6e-927f-755670ba354b" />
+    </td>
+    <td align="center">
+     <img width="100%" height="1077" alt="image" src="https://github.com/user-attachments/assets/ca365dca-b9dc-42f7-8e92-703ce1a58477" />
+    </td>
+  </tr>
+</table>
         
-<img width="50%" height="1080" alt="image" src="https://github.com/user-attachments/assets/59107890-a5dd-46d8-8aa1-cb89ade19af1" />
 
-<img width="50%" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cd0e7bf-3505-4d6e-927f-755670ba354b" />
-<img width="50%" height="1077" alt="image" src="https://github.com/user-attachments/assets/ca365dca-b9dc-42f7-8e92-703ce1a58477" />
+
 
 
 
@@ -311,9 +336,19 @@ Frontend Dashboard
 
 ---
 ## 🧠 AI Chat -getting important insights of meet  by asking questions to AI
-<img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/45e32089-d6e7-4099-826e-344a4dc38360" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/291c95a8-8ddc-4bea-86b2-f737c0bb0935" />
+<table>
+  <tr>
+    <td align="center">
+      <img width="1917" height="1077" alt="image" src="https://github.com/user-attachments/assets/45e32089-d6e7-4099-826e-344a4dc38360" />
+    </td>
+    <td align="center">
+     <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/291c95a8-8ddc-4bea-86b2-f737c0bb0935" />
+    </td>
+  </tr>
+</table>
+
+
 
 
 ---
@@ -430,7 +465,7 @@ GitHub:
 https://github.com/AayushShirode2060
 
 LinkedIn:
-(Add your LinkedIn URL)
+www.linkedin.com/in/aayush-shirode
 
 ---
 
