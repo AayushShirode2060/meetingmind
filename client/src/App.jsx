@@ -19,7 +19,7 @@ import Navbar from './components/Navbar/Navbar';
 // but for now we import them directly
 import Home from './pages/Home/Home';
 import Upload from './pages/Upload/Upload';
-import MeetingPage from './pages/Meeting/Meeting';
+
 import History from './pages/History/History';
 import Chat from './pages/Chat/Chat';
 import NotFound from './pages/NotFound/NotFound';
@@ -65,7 +65,7 @@ function App() {
           {/* Meeting detail — :id is a URL parameter (MongoDB ObjectId) */}
           <Route path="/meeting/:id" element={<MeetingDetail/>} />
           {/* Meeting history list */}
-          <Route path="/history" element={<History />} />
+          <Route path="/history" element={<History/>} />
           {/* AI chat for a specific meeting */}
           <Route path="/meeting/:id/chat" element={<Chat />} />
           {/* 404 catch-all — matches any unrecognized URL */}

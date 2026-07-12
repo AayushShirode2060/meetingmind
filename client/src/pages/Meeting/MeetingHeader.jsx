@@ -90,7 +90,8 @@ const MeetingHeader = ({ meeting }) => {
       window.URL.revokeObjectURL(url);
 
       toast.success('PDF downloaded!', { id: 'pdf' });
-    } catch (error) {
+    } catch (err) {
+      console.error(err);
       toast.error('Failed to download PDF', { id: 'pdf' });
     }
   };
@@ -164,7 +165,7 @@ const MeetingHeader = ({ meeting }) => {
 
           {/* Chat with Meeting */}
           <button
-            onClick={() => navigate(`/chat/${meeting._id}`)}
+            onClick={() => navigate(`/meeting/${meeting._id}/chat`)}
             className="flex items-center gap-2 px-5 py-2.5 bg-bg-card hover:bg-bg-card-hover 
                        text-text-primary rounded-xl font-medium text-sm transition-all duration-300
                        border border-border hover:border-accent/30"
