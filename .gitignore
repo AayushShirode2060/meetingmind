@@ -3,6 +3,7 @@ node_modules/
 
 # Environment
 .env
+.env.production
 
 # Uploads (keep dirs, ignore files)
 server/uploads/audio/*

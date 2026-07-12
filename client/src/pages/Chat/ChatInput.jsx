@@ -60,7 +60,7 @@ const ChatInput = ({ onSend, disabled = false }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="glass p-3 sm:p-4 rounded-2xl">
+    <form onSubmit={handleSubmit} className="w-full glass p-3 sm:p-4 rounded-2xl">
       <div className="flex items-end gap-3">
         {/* Text input */}
         <input

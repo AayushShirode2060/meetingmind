@@ -3,7 +3,7 @@
 // Brand credit and links
 // ============================================================
 
-import { HiOutlineSparkles } from 'react-icons/hi2';
+
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto text-center">
         {/* Brand */}
         <div className="flex items-center justify-center gap-2 mb-4">
-          <HiOutlineSparkles className="text-accent" />
+          <img src="/logo.png" alt="MeetingMind AI Logo" className="w-6 h-6 object-contain rounded" />
           <span className="font-bold gradient-text">MeetingMind AI</span>
         </div>
         {/* Credit */}
