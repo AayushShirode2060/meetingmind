@@ -18,6 +18,18 @@ Transform meeting recordings into structured transcripts, AI-generated summaries
 ![AssemblyAI](https://img.shields.io/badge/AssemblyAI-Speech--to--Text-orange?style=for-the-badge)
 ![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
+<br>
+
+![GitHub stars](https://img.shields.io/github/stars/AayushShirode2060/meeting-mind?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/AayushShirode2060/meeting-mind?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/AayushShirode2060/meeting-mind?style=for-the-badge)
+![Visitors](https://komarev.com/ghpvc/?username=AayushShirode2060&repo=MeetingMind-AI&style=for-the-badge)
+
+<br>
+
+
+
+
 </p>
 
 <p align="center">
