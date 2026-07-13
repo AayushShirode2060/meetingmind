@@ -55,9 +55,12 @@ https://meetingmind-ysbc.onrender.com/api/health
 (Watch in 0.5x for understanding flow in better way)
 
 
+
+
 https://github.com/user-attachments/assets/2355f1d2-ff80-4ce7-becc-a0dcae237525
 
-
+### 📹 Detailed Demo Video(Youtube link)
+https://youtu.be/8a8s_23mrDI
 
 ---
 
